@@ -27,6 +27,7 @@ public:
     double lr = 0,ud = 0;
     int pcount = 0;
     QString showdata(){
+        qDebug()<<"work";
         QString ans;
         ans += "position :("+std::to_string(myposition.position[0])+","+std::to_string(myposition.position[1])+","+std::to_string(myposition.position[2])+")";
         ans+= "\n";
@@ -36,7 +37,6 @@ public:
           ans+= "\n";
         ans += "points:"+std::to_string(pcount);
         return ans;
-
     }
 
 

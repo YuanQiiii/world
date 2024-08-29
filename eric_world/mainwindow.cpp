@@ -39,7 +39,7 @@ void MainWindow::paintEvent(QPaintEvent *event)
         todraw[i] = transformation_matrix.transformation_right(points[i]);
     }
 
-    pcount = todraw.size();
+    pcount = int(todraw.size());
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
 
@@ -93,7 +93,7 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
         QMainWindow::keyPressEvent(event);
     }
     update();
-    ui->datalabel->setText(showdata());
+     ui->datalabel->setText(showdata());
     qDebug() << "keyboard";
 }
 

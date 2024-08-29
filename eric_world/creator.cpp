@@ -2,7 +2,7 @@
 #include<cmath>
 #include <cstdlib>
 #include <ctime>
-
+#define M_PI 3.14159265358979323846
 std::vector<Point> match(const std::pair<Point, Point> &line, const int number)
 {
     std::vector<Point> points_on_line;
@@ -77,28 +77,28 @@ std::vector<Point> createcube(double x,double y,double z,double l){
 }
 std::vector<Point> globalcreator(){
      std::vector<Point> points;
-    // std::vector<Point> ball1 = createball(2,2,2,1);
-    // for (auto &point: ball1)
-    // {
-    //     points.push_back(point);
-    // }
-    // std::vector<Point> ball2 = createball(0,0,0,0.3);
-    // for (auto &point: ball2)
-    // {
-    //     points.push_back(point);
-    // }
-    // std::vector<Point> cube1 = createcube(1,1,1,2);
-    // for (auto &point: cube1)
-    // {
-    //     points.push_back(point);
-    // }
-
-
-    std::vector<Point> heart1 = createHeart(1.5);
-    for (auto &point: heart1)
+    std::vector<Point> ball1 = createball(2,2,2,1);
+    for (auto &point: ball1)
     {
         points.push_back(point);
     }
+    std::vector<Point> ball2 = createball(0,0,0,0.3);
+    for (auto &point: ball2)
+    {
+        points.push_back(point);
+    }
+    std::vector<Point> cube1 = createcube(1,1,1,2);
+    for (auto &point: cube1)
+    {
+        points.push_back(point);
+    }
+
+
+    // std::vector<Point> heart1 = createHeart(1.5);
+    // for (auto &point: heart1)
+    // {
+    //     points.push_back(point);
+    // }
 
 
     // double x = 0.0, y = 0.0, z = 0.0, sideLength = 10.0; // 四面体的起始坐标和边长
