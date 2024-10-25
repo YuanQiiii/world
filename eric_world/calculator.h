@@ -20,10 +20,10 @@ public:
 class Matrix { // 矩阵及其计算
 public:
     double matrix[4][4]{0};
-    Matrix multiplication_right(const Matrix& right); // 右乘
+    Matrix multiplication_right(const Matrix& right) ; // 右乘
     Matrix multiplication_left(const Matrix& left); // 左乘
     Matrix addition(const Matrix& right); // 加法
-    Point transformation_right(const Point& origin); // 右乘向量
+    Point transformation_right(const Point& origin) const; // 右乘向量
     Matrix(bool flag = false) { // 初始化
         // 生成0矩阵
         for(int i = 0;i<4;i++){

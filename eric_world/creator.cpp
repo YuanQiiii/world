@@ -32,7 +32,7 @@ Point generateRandomPointOnSphere(double _x,double _y,double _z,double _r) {
 std::vector<Point> createball(double x,double y,double z,double r){
     srand(static_cast<unsigned int>(time(nullptr))); // 初始化随机数生成器
 
-    const int numPoints = 50000; // 生成点的数量
+    const int numPoints = 5000; // 生成点的数量
     std::vector<Point> points;
 
     for (int i = 0; i < numPoints; ++i) {
@@ -125,7 +125,7 @@ Point generateRandomPointOnHeart(double scale) {
 std::vector<Point> createHeart(double scale) {
     srand(static_cast<unsigned int>(time(nullptr))); // 初始化随机数生成器
 
-    const int numPoints = 50000; // 生成点的数量
+    const int numPoints = 5000; // 生成点的数量
     std::vector<Point> points;
 
     for (int i = 0; i < numPoints; ++i) {
@@ -171,7 +171,7 @@ Point generateRandomPointInTetrahedron(const std::vector<Point>& vertices) {
 std::vector<Point> createTetrahedron(double x, double y, double z, double sideLength) {
     srand(static_cast<unsigned int>(time(nullptr))); // 初始化随机数生成器
 
-    const int numPoints = 50000; // 生成点的数量
+    const int numPoints = 5000; // 生成点的数量
     std::vector<Point> points;
 
     // Define the vertices of the tetrahedron

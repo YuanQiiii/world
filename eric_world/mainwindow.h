@@ -15,6 +15,13 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+private:
+    int frameCount;         // 帧计数
+    QTimer* frameTimer;     // 定时器
+    void updateFrameRate() {
+        qDebug() << "Current Frame Rate:" << frameCount;
+        frameCount = 0; // 重置帧计数
+    }
 
 protected:
     void paintEvent(QPaintEvent *event) override;

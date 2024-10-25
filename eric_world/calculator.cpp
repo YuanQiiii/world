@@ -1,6 +1,6 @@
 #include "calculator.h"
 #include<cmath>
-Matrix Matrix::multiplication_right(const Matrix& right) {
+Matrix Matrix::multiplication_right(const Matrix& right)  {
     Matrix ans;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
@@ -34,7 +34,7 @@ Matrix Matrix::addition(const Matrix& right) {
     return ans;
 }
 
-Point Matrix::transformation_right(const Point& origin) {
+Point Matrix::transformation_right(const Point& origin) const {
     Point ans;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
