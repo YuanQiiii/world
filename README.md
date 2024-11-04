@@ -1,4 +1,4 @@
-# eric_world
+# world
 计算机图形初体验
 
 QT 6.6.3
